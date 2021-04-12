@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Fitness First</title>
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+	
+<body>
+
+	<div class="container">
+<p style="text-align:right;">
+<img src="fitnessfirst.png" alt="fitnessfirst" style="width: 8%" > 
+</p>
+		<div class="nav-wrapper">
+			<div class="left-side">
+				<div class="nav-link-wrapper">
+					<a class="active" href="index.html">Home</a>
+				</div>
+				
+				<div class="nav-link-wrapper">
+					
+ 				<li class="dropdown">
+ 				<a href="javascript:void(0)">Get Fit</a>
+    					<div class="dropdown-content">
+     					<a href="programs.html">Programs</a>
+      					<a href="facilities.html">Facilities</a>
+					</div>
+ 				</li>
+				</div>
+				
+				<div class="nav-link-wrapper">
+				<a href="membership.html">Membership</a>
+				</div>
+				
+				<div class="nav-link-wrapper">
+  				<li class="dropdown">
+   				<a href="javascript:void(0)">MORE INFO</a>
+   					<div class="dropdown-content">
+     					<a href="faq.html">Frequently Asked Questions</a>
+      					<a href="contactus.html">Contact Us</a>
+    					</div>
+  				</li>
+				</div>
+			</div>
+		</div>
+	</div>
+<br>
+<div class="container">
+<div class="containerss">
+   <img src="main.jpg" alt="Snow" style="width:100%;">
+
+  <div class="centered">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>#1 AGAIN...</h1>
+<br>
+
+<br>
+<h2>One Day or Day One.</h2>
+<p>Sign up with us today to Keep Fit!</p></div>
+</div>
+<br>
+<div class="heading">
+<h1><em>UPDATES</em></h1>
+<br>
+<h4><i>Click <a href= "contactus.html"> here</a> to find out FAQs
+</i><h4>
+<h4><i>Here's a short video to introduce to you Fitness First during Covid-19!
+</i><h4>
+<br>
+<div class="container">
+<iframe width="760" height="515" src="https://www.youtube.com/embed/NlyEurXoaKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+<br>
+<br>
+<h1><em>HIGHLIGHTS</em></h1>
+<br>
+<h4><i>Here’s what’s new at our clubs.</i><h4>
+<br>
+<div style="text-align:center">
+
+<div class="slideshow-containers">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="myfit.jpg" style="width:100%">
+  <div class="text"><b><a href= "https://www.fitnessfirst.com.sg/myfit-1a"> MyFit Plan</a></b></div>
+  <div class="heading">
+<br>
+  <p>Design your own membership plan and select your favourite classes from our signature selection.</p>
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="app.jpg" style="width="200" height="515">
+  <div class="text"><b><a href= "https://www.fitnessfirst.com.sg/mobile-app"> Mobile App</a></b></div>
+  <div class="heading">
+<br>
+  <p>Download the new mobile app and book your gym floor access and/or classes prior to your club visit.</p>
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="class.jpg" style="width:100%">
+  <div class="text"><b><a href= "programs.html">Our Programs</a></b></div>
+<div class="heading">
+<br>
+  <p>If you love the energy of group workouts, we have the perfect program for you.</p>
+</div>
+</div>
+
+<a class="prevs" onclick="plusSlides(-1)">&#10094;</a>
+<a class="nexts" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>  
+   
+</div>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="container">
+	<div class="footer">
+		<div class="columns">
+		<img src="fitnessfirst.png" alt="ff" style="width: 45%" > 
+		</div>
+		<div class="columns">
+			<p><h3>Opening Hours</h3> 
+			<br>
+			<i>Mondays to Fridays: </i>
+			<br> 11am–11pm 
+			<br> 
+			<br>
+			<i>Saturdays and Sundays:</i> 
+			<br> 10am–11pm 
+			</p>
+		</div>
+		<div class="columns">
+			<p><h3>Contact Us</h3> 
+			<br>
+			<i>Phone:</i> (+65) 6713 9120
+			<br>
+			<br><i>Email:</i> <a href="mailto:support@fitnessfirst.com.sg">support@fitnessfirst.com.sg</a>
+			</p>
+			<a href="https://www.facebook.com/FitnessFirstSingapore/">
+			<img border="0" alt=fblink"" src="facebook-f.png" width="20" height="40">
+			</a>
+			<a href="https://www.instagram.com/fitnessfirstsg">
+			<img border="0" alt=iglink"" src="instagram.png" width="36" height="36">
+			</a>
+			<a href="https://www.youtube.com/channel/UCMNOPKcjL7pqvxEgrFAWZcQ">
+			<img border="0" alt=ytlink"" src="youtube.png" width="45" height="45">
+			</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

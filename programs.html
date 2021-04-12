@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Programs</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<p style="text-align:right;">
+<img src="fitnessfirst.png" alt="fitnessfirst" style="width: 8%" > 
+</p>
+		<div class="nav-wrapper">
+			<div class="left-side">
+				<div class="nav-link-wrapper">
+					<a href="index.html">Home</a>
+				</div>
+				
+				<div class="nav-link-wrapper">
+					
+ 				<li class="dropdown">
+ 				<a class="active" href="javascript:void(0)">Get Fit</a>
+    					<div class="dropdown-content">
+     					<a class="active" href="programs.html">Programs</a>
+      					<a href="facilities.html">Facilities</a>
+					</div>
+ 				</li>
+				</div>
+				
+				<div class="nav-link-wrapper">
+				<a href="membership.html">Membership</a>
+				</div>
+				
+				<div class="nav-link-wrapper">
+  				<li class="dropdown">
+   				<a href="javascript:void(0)">MORE INFO</a>
+   					<div class="dropdown-content">
+     					<a href="faq.html">Frequently Asked Questions</a>
+      					<a href="contactus.html">Contact Us</a>
+    					</div>
+  				</li>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+<br>
+<br>
+<div class="heading">
+
+	<h1><em>OUR PROGRAMS</em></h1>
+<h3><i>Prefer to workout in a group? We've got a class for that.</i><h3>
+
+<h5>Whatever type of of workout you're looking for, you'll find it here.</h5>
+</div>
+
+<br>
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="strength.png" style="width: 100%">
+  <div class="text"><b>Strength and Conditioning</b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="cardio.jpg" style="width:100%">
+  <div class="text"><b>Cardio</b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="mind.png" style="width:100%">
+  <div class="text"><b>Mind and Body</b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="hip-hop.jpg" style="width:100%">
+  <div class="text"><b>Dance</b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="cycling.png" style="max-width:100%">
+  <div class="text"><b>Cycling</b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="hiit.png" style="width:100%">
+  <div class="text"><b>HIIT</b></div>
+</div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>  
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="row">
+  <div class="column">
+    <h2>Strength and Conditioning</h2>
+    <p>You’ll build functional strength for your whole body, as well as enhance your muscular endurance and boost your metabolism. Walk away feeling relaxed and with more lean muscle mass.
+</p>
+  </div>
+  
+  <div class="column">
+    <h2>Cardio</h2>
+    <p>During the workout, you’ll get your heart pumping, and increase your cardio fitness. You’ll shape and tone your butt and legs, and improving your coordination and agility. Best of all, you’ll keep burning calories long after the workout is over. 
+
+</p>
+  </div>
+  
+  <div class="column">
+    <h2>Mind and Body</h2>
+    <p>Find your centre in this yoga-based workout that’ll improve your mind, body and life. This class uses a series a simple yoga moves and embraces elements of Tai Chi and Pilates. You will bend and stretch to an inspiring soundtrack filled with songs that will help you relax and calm yourself. 
+</p>
+  </div>
+  <div class="column">
+    <h2>Dance</h2>
+    <p>Welcome to the ultimate combination of dance and music. It’s all about moving through an addictive fusion of the latest dance moves choreographed to the hottest new music. And it doesn’t matter if you’re a dance master or if you have two left feet, there’s something in this class for you.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Cycling</h2>
+    <p>This challenging indoor cycling class combines aerobic and anaerobic training. In between short, intense sprints, you’ll keep cycling to raise your heart rate. You’ll improve your cardiovascular and muscular endurance and walk away on stronger legs.
+</p>
+  </div>
+  
+  <div class="column">
+    <h2>HIIT</h2>
+    <p>This class is perfect if you want to work on multiple areas. You’ll do circuit style training that focuses on cardio, strength, mobility, agility, and reaction time. You’ll leave class with a sense of accomplishment and better overall training abilities.
+</p>
+  </div>
+</div>
+
+<div class="container">
+	<div class="footer">
+		<div class="columns">
+		<img src="fitnessfirst.png" alt="ff" style="width: 45%" > 
+		</div>
+		<div class="columns">
+			<p><h3>Opening Hours</h3> 
+			<br>
+			<i>Mondays to Fridays: </i>
+			<br> 11am–11pm 
+			<br> 
+			<br>
+			<i>Saturdays and Sundays:</i> 
+			<br> 10am–11pm 
+			</p>
+		</div>
+		<div class="columns">
+			<p><h3>Contact Us</h3> 
+		
+			<br>
+			<i>Phone:</i> (+65) 6713 9120
+			<br>
+			<br><i>Email:</i> <a href="mailto:support@fitnessfirst.com.sg">support@fitnessfirst.com.sg</a>
+			</p>
+			<a href="https://www.facebook.com/FitnessFirstSingapore/">
+			<img border="0" alt=fblink"" src="facebook-f.png" width="20" height="40">
+			</a>
+			<a href="https://www.instagram.com/fitnessfirstsg">
+			<img border="0" alt=iglink"" src="instagram.png" width="36" height="36">
+			</a>
+			<a href="https://www.youtube.com/channel/UCMNOPKcjL7pqvxEgrFAWZcQ">
+			<img border="0" alt=ytlink"" src="youtube.png" width="45" height="45">
+			</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
